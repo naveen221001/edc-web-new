@@ -1,0 +1,255 @@
+html,body{
+  overflow-x: hidden;
+  min-height: 100%;
+  scroll-behavior: smooth;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    width: 100%;
+    overflow-x:hidden;
+    margin: 0%;
+    background-color: rgb(13,14,20);
+    background-image: url(img/clock.jpg);
+    
+    background-attachment: fixed;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#mp{
+  background-image: url(img/bg5.jpg);
+    
+  background-attachment: fixed;
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    min-height: 100vh;
+   
+ 
+}
+
+#About{
+ background-color: white;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+  /*  color: rgb(14, 15, 15); */
+    font-weight: bolder;
+    padding: 0.5%;
+  }
+#nav{ 
+  background-color: rgb(75,25,217);;
+ 
+  
+  width: 100vw;
+  
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+    font-size: larger;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.k {
+  font-size: larger;
+  text-decoration: solid;
+  text-align: center;
+
+  color: rgb(255, 255, 255);
+  
+  align-items: center;
+    
+}
+#values{
+  
+  margin-bottom: -3%;
+  height:100;
+  
+  background-size: cover;
+  color: rgb(255, 255, 255);
+
+}
+#motto{
+  
+  min-height: 100vh;
+  background-size: cover;
+
+}
+
+
+
+#footer{padding-top: 0%;
+background-color: rgb(51,45,45);}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  
+}
+
+.container1 {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container {
+  margin-top: 8vh;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+.team {
+  background-color: rgb(188 208 219);
+  border: 2px solid #0047AB;
+  width: 20rem;
+  height: 15rem;
+  margin: 2%;
+  position: relative;
+  transition: 0.6s ease-out;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+  
+  background-size: contain;
+ background-repeat: no-repeat;
+ background-position: center;
+}
+#team1{
+  background-image: url("image/sarvesh_dubey.png");
+}
+#team2{
+  background-image: url("image/priyanshu.png");
+}
+#team3{
+  background-image: url("image/naveen.png");
+}
+#team4{
+  background-image: url("image/nishan.png");
+}
+#team5{
+  background-image: url("image/sonu.png");
+}
+
+
+  
+
+.position {
+  position: relative;
+  bottom: 0;
+  z-index: 3;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(160px);
+  transition: .5s;
+  left: 10px;
+  display: block;
+ font-size: large;
+}
+.name{
+  position: relative;
+  bottom: 0;
+  z-index: 3;
+  color: rgb(0, 0, 0);
+  opacity: 0;
+  transform: translateY(175px);
+  transition: .5s;
+  left: 10px;
+  display: block;
+  font-size: large;
+}
+
+.fab {
+  margin-left: 0.5vw;
+  cursor: pointer;
+}
+.fas {
+  margin-left: 0.3vw;
+  cursor: pointer;
+}
+
+/* web team data  */
+
+/* hover effects */
+.fab:hover {
+  font-size: x-large;
+}
+.fas:hover{
+  font-size: x-large;
+}
+.team:hover{
+  transform: translateY(10px);
+}
+.team:hover::before{
+  opacity: 1;
+}
+.team:hover .position {
+  opacity: 1;
+}
+.team:hover .name {
+  opacity: 1;
+}
+.team::before{
+content: '';
+position: absolute;
+top:0;
+left: 0;
+display: block;
+width: 100%;
+height: 100%;
+background: linear-gradient(to top,#000,transparent);
+z-index:2;
+transition: 0.5s;
+opacity: 0;
+}
+
+
+/* responsive */
+@media screen and (max-width: 710px) {
+  .container1 {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .team {
+    width: 80%;
+    margin: 2%;
+    position: relative;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+  }
+  .fab {
+    margin-left: 2vw;
+    cursor: pointer;
+  }
+  .fas {
+    margin-left: 1vw;
+    cursor: pointer;
+  }
+}
